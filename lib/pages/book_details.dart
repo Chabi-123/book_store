@@ -52,7 +52,7 @@ class _BookDetailsState extends State<BookDetails> {
                         children: [
                           RatingBar.builder(
                             itemSize: 25,
-                            initialRating: widget.bookList.rating, // Initialize with the book's rating
+                            initialRating: widget.bookList.rating,
                             minRating: 1,
                             direction: Axis.horizontal,
                             allowHalfRating: true,
@@ -63,7 +63,6 @@ class _BookDetailsState extends State<BookDetails> {
                               color: Colors.amber,
                             ),
                             onRatingUpdate: (rating) {
-                              // Update the rating for the specific book
                               setState(() {
                                 widget.bookList.rating = rating;
                               });
